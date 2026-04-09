@@ -1,0 +1,103 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <windows.h>
+
+// ==================== CONFIG 2026 ====================
+#define VERSION "1.0"
+#define AUTEUR  "NCDG nexus compiler dev group"
+
+#define ACCUEIL "\n" \
+"===============================================\n" \
+"          NEXUS COMPILER v" VERSION "\n" \
+"          （c) 2026 " AUTEUR " | Tous droits reserves\n" \
+"===============================================\n"
+
+#define SORTIE "\n" \
+"===============================================\n" \
+"          Merci d'avoir utilise Nexus !\n" \
+"          (c) 2026 " AUTEUR "\n" \
+"===============================================\n"
+// ======================================================
+
+// Ouvrir avec Notepad
+void nano(const char *fichier) {
+    char cmd[512];
+    snprintf(cmd, sizeof(cmd), "notepad \"%s\"", fichier);
+    system(cmd);
+}
+
+// Supprimer un fichier (commande rm)
+void rm(const char *fichier) {
+    if (DeleteFileA(fichier)) {
+        printf("[?] Fichier supprime : %s\n", fichier);
+    } else {
+        printf("[?] Erreur : Impossible de supprimer %s\n", fichier);
+    }
+}
+
+// Compiler avec le GCC systeme (SANS copie de fichier)
+void compiler(const char *src, const char *out) {
+    char commande[1024];
+    snprintf(commande, sizeof(commande),
+        "gcc \"%s.c\" -o \"%s.exe\" -mconsole", src, out);
+
+    printf("\n[+] Compilation...\n");
+    int res = system(commande);
+    
+    if (res == 0) printf("[?] SUCCES : %s.exe cree\n", out);
+    else printf("[?] ERREUR : Code C invalide\n");
+}
+
+int main() {
+    system("cls");
+    printf(ACCUEIL);
+    printf("Mode : Compilateur systeme | SANS fichiers externes\n\n");
+
+    char cmd[256], action[64], arg1[128], arg2[128];
+    while (1) {
+        printf("nexus> ");
+        fgets(cmd, sizeof(cmd), stdin);
+        cmd[strcspn(cmd, "\n")] = 0;
+
+        int args = sscanf(cmd, "%s %s %s", action, arg1, arg2);
+
+        // Quitter
+        if (!strcmp(action, "exit") || !strcmp(action, "quit")) break;
+
+        // Aide
+        if (!strcmp(action, "help") || !strcmp(action, "h")) {
+            printf("\nCommandes disponibles :\n");
+            printf("  nano <fichier>   → Editer un fichier\n");
+            printf("  make <src> <exe> → Compiler un code C\n");
+            printf("  rm   <fichier>   → Supprimer un fichier\n");
+            printf("  exit             → Quitter\n\n");
+            continue;
+        }
+
+        // Editeur
+        if (!strcmp(action, "nano") && args >= 2) {
+            nano(arg1);
+            continue;
+        }
+
+        // Suppression
+        if (!strcmp(action, "rm") && args >= 2) {
+            rm(arg1);
+            continue;
+        }
+
+        // Compilation
+        if (!strcmp(action, "make") && args >= 3) {
+            compiler(arg1, arg2);
+            continue;
+        }
+
+        if (strlen(action) > 0)
+            printf("Commande inconnue. Tapez 'help'\n");
+    }
+
+    printf(SORTIE);
+    system("pause");
+    return 0;
+}
