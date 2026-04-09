@@ -62,8 +62,12 @@ Erreur CreateProcess: No such file or directory
 Cause : Tentative d'utilisation de gcc.exe externe sans tous les fichiers MinGW
 Solution : Utilisez la version système de GCC (intégrée à Dev-C++), pas de copie de fichier nécessaire
 
+comment utiliser:
+mettez le dans un dossier avec gcc.exe et tous les autres fichier neccecaire a son fonctionnement.
+ouvrez et vous pouvez taper help pour avoir une aide.
+
  Licence:
-Ce projet est open-source, sous licence MIT (voir fichier LICENSE pour plus de détails).
+Ce projet est open-source, sous licence MIT.
 © 2026 NDG Dev Team. Tous droits réservés.
 
 Contribution:
