@@ -1,0 +1,62 @@
+ USAGE LICENSE - NEXUS COMPILER
+Copyright (c) 2026 NDG Dev Team. All Rights Reserved.
+This License Agreement ("Agreement") governs the use, copy, and distribution of the Nexus Compiler software ("Software"), developed by NDG Dev Team ("Licensor"). By accessing, installing, or using the Software, you ("Licensee") agree to be bound by the terms and conditions set forth below.
+
+1. GRANT OF LICENSE
+
+Licensor grants Licensee a non-exclusive, non-transferable license to use the Software for personal, educational, or professional purposes, subject to compliance with all terms of this Agreement.
+
+This license includes the right to: (a) install and run the Software on any compatible Windows device owned or controlled by Licensee; (b) make a reasonable number of backup copies of the Software for archival purposes only; (c) distribute unmodified copies of the Software, provided all copyright notices and this License Agreement are included.
+
+2. RESTRICTIONS
+
+Licensee shall not, under any circumstances:
+
+- Modify, decompile, disassemble, reverse-engineer, or attempt to derive the source code of the Software, in whole or in part, without prior written permission from Licensor.
+
+- Sell, rent, lease, sublicense, or otherwise exploit the Software for commercial gain, including but not limited to charging third parties for access to the Software.
+
+- Remove, alter, or obscure any copyright notices, version information, or attribution marks embedded in the Software.
+
+- Use the Software in connection with illegal activities, or in any way that violates applicable local, state, national, or international laws.
+
+- Modify the Software to create derivative works, or merge the Software with other software or systems without written approval from Licensor.
+
+3. INTELLECTUAL PROPERTY RIGHTS
+
+All intellectual property rights in and to the Software, including but not limited to copyrights, trademarks, patents, and trade secrets, remain the exclusive property of Licensor. This Agreement does not transfer any ownership rights to Licensee, only a limited license to use the Software.
+
+4. WARRANTY DISCLAIMER
+
+The Software is provided "as is" without any express or implied warranty of any kind. Licensor disclaims all warranties, including but not limited to: (a) the warranty of merchantability; (b) the warranty of fitness for a particular purpose; (c) warranties of non-infringement; and (d) warranties that the Software will be error-free, uninterrupted, or compatible with all devices or systems.
+
+Licensor does not warrant that the Software will meet Licensee’s specific requirements, or that any errors in the Software will be corrected.
+
+5. LIMITATION OF LIABILITY
+
+In no event shall Licensor (or its members, employees, or affiliates) be liable for any direct, indirect, incidental, special, consequential, or exemplary damages arising out of or in connection with the use or inability to use the Software. This includes, but is not limited to, damages for loss of data, loss of profits, business interruption, or any other commercial damages or losses.
+
+This limitation of liability applies even if Licensor has been advised of the possibility of such damages, and regardless of the legal theory (contract, tort, or otherwise) upon which the claim is based.
+
+6. TERMINATION
+
+This License Agreement shall remain in effect until terminated. Licensor may terminate this Agreement immediately if Licensee violates any term or condition of this Agreement. Upon termination, Licensee shall immediately cease all use of the Software, delete all copies of the Software from its devices, and destroy any backup copies.
+
+Sections 2, 3, 4, 5, 7, and 8 shall survive termination of this Agreement.
+
+7. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of [Insert Jurisdiction, e.g., "the State of [Your State], United States of America"], without regard to its conflict of laws principles.
+
+8. MISCELLANEOUS
+
+This Agreement constitutes the entire understanding between Licensor and Licensee with respect to the Software, and supersedes all prior or contemporaneous agreements, whether written or oral.
+
+Licensor reserves the right to modify the terms of this Agreement at any time. Any modifications will be posted on the Software’s GitHub repository, and continued use of the Software after such modifications shall constitute acceptance of the updated terms.
+
+If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.
+
+By using the Software, you acknowledge that you have read, understood, and agree to all terms of this License Agreement.
+
+NDG Dev Team
+Copyright © 2026 All Rights Reserved
